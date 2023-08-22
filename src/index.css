@@ -1,13 +1,101 @@
+@import url('https://fonts.cdnfonts.com/css/hittedal-sans');
+@import url('https://fonts.cdnfonts.com/css/rather');
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#main {
+  display: grid;
+  grid-template-areas: 's1 s1 s1 s1'
+    's2 s2 s2 s2';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100vh 100vh;
+}
+
+#s1 {
+  grid-area: s1;
+  overflow: hidden;
+}
+
+#s1-container {
+  display: grid;
+  grid-template-areas: 'nav nav nav nav'
+    'title title title title'
+    'tabs tabs tabs tabs'
+    'img img img img';
+  grid-template-rows: 10vh auto 10vh 70vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#nav {
+  grid-area: nav;
+  padding: 20px 0px;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.nav-link {
+  margin: 0px 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+  grid-area: title;
+  display: grid;
+  place-items: center;
+  margin-top: 40px;
+  font-family: 'Hittedal Sans', sans-serif;
+}
+
+#title-h1 {
+  font-size: 6rem;
+}
+
+#tabs {
+  grid-area: tabs;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#t1,
+#t2,
+#t3,
+#t4 {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+
+#images {
+  grid-area: img;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: 'img1 img1 img1 img2';
+  gap: 1rem;
+}
+
+#img1 {
+  grid-area: img1;
+  background-image: url('https://images.unsplash.com/34/a1mV1egnQwOqxZZZvhVo_street.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+#img2 {
+  grid-area: img2;
+  background-image: url('https://images.unsplash.com/photo-1556565668-3a580a1e098e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+/*Section 2 */
+
+
+#s2 {
+  grid-area: s2;
 }
