@@ -1,5 +1,7 @@
 import React from "react";
-import HdrStrongIcon from '@mui/icons-material/HdrStrong';
+import { Button } from "@mui/material";
+import ShortTextIcon from '@mui/icons-material/ShortText';
+import LightIcon from '@mui/icons-material/Light';
 
 export default function Section1() {
     return (
@@ -7,10 +9,10 @@ export default function Section1() {
             <div id="nav" className="container">
                 <nav className="navbar navbar-expand-lg bg-body-tertiary">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="/"><HdrStrongIcon /> FFT</a>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
+                        <a className="navbar-brand" href="/"><LightIcon /> Tipicl</a>
+                        <Button color="inherit" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <ShortTextIcon fontSize="large" />
+                        </Button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav mx-auto">
                                 <a className="nav-link active" aria-current="page" href="/">Home</a>
@@ -28,10 +30,10 @@ export default function Section1() {
             </div>
 
             <div id="tabs" className="container">
-                <div id="t1"><p>PLACES</p></div>
-                <div id="t2"><p>SPACE</p></div>
-                <div id="t3"><p>ARCHITECTURE</p></div>
-                <div id="t4"><p>INTERIORS</p></div>
+                <div id="t1">Places</div>
+                <div id="t2">Spaces</div>
+                <div id="t3">Architecture</div>
+                <div id="t4">Interiors</div>
             </div>
 
             <div id="images">
