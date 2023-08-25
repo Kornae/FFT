@@ -16,7 +16,7 @@ export default function Section2() {
                     <h6>About</h6>
                     <h3>Lorm Interior Architecture</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa.</p>
-                    <Button variant="outlined" color="inherit" style={{ width: '50%', borderRadius: '0px', padding: '10px' }}>Learn More</Button>
+                    <Button variant="outlined" color="inherit" style={{ width: '40%', borderRadius: '0px', padding: '10px' }}>Learn More</Button>
 
                 </div>
 

@@ -28,7 +28,7 @@ body {
     'title title title title'
     'tabs tabs tabs tabs'
     'img img img img';
-  grid-template-rows: 10vh auto 8vh 100vh;
+  grid-template-rows: auto auto 8vh 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -48,6 +48,10 @@ body {
 .nav-link {
   margin: 0px 40px;
   font-family: 'Lato', sans-serif;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 #title {

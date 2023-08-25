@@ -3,20 +3,21 @@ import { Button } from "@mui/material";
 import ShortTextIcon from '@mui/icons-material/ShortText';
 import LightIcon from '@mui/icons-material/Light';
 
-export default function Section1() {
+export default function Section1(props) {
+
     return (
         <div id="s1-container" className="">
             <div id="nav" className="container">
                 <nav className="navbar navbar-expand-lg bg-body-tertiary">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="/"><LightIcon /> Tipicl</a>
+                        <a className="navbar-brand" href="/"><LightIcon /> FFTpcl</a>
                         <Button color="inherit" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <ShortTextIcon fontSize="large" />
                         </Button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav mx-auto">
                                 <a className="nav-link active" aria-current="page" href="/">Home</a>
-                                <a className="nav-link" href="/">About Us</a>
+                                <a className="nav-link" href="/" onClick={props.scroll}>About Us</a>
                                 <a className="nav-link" href="/">Work</a>
                                 <a className="nav-link" href="/">Contact Us</a>
                             </div>
