@@ -30,8 +30,10 @@ export default function ColorInversionFooter(props) {
             <div id='first-section'>
                 <div id='footer-quote'>
                     <p id="f-quote">
-                        “A man has not fully lived until he experiences that gentle balmy climate of ancient empires, the land of lemon trees and the genius of Michelangelo.”   <br />
-                    </p> <p id="f-author">  — E.A. BUCCHIANERI - AMERICAN WRITER </p></div>
+                        “Open my heart and you will see Graved inside of it, “Italy”.”
+
+                        <br />
+                    </p> <p id="f-author">  — ROBERT BROWNING (1812-1889) - ENGLISH POET AND PLAYWRIGHT </p></div>
 
                 <div id='socials'>
                     <span id='media'>
