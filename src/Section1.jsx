@@ -11,7 +11,7 @@ export default function Section1(props) {
                 <nav className="navbar navbar-expand-lg bg-body-tertiary">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="/"><LocalPizzaIcon /> Italy</a>
-                        <Button color="inherit" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <Button color="inherit" className="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <ShortTextIcon fontSize="large" />
                         </Button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">

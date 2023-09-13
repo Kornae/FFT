@@ -7,11 +7,11 @@ export default function Section5(props) {
             <div id="s5-footer">
                 <div id="footer">
                     <ColorInversionFooter
-                    home={props.home}
-                    overview={props.overview}
-                    food={props.food}
-                    explore={props.explore}
-                     />
+                        home={props.home}
+                        overview={props.overview}
+                        explore={props.explore}
+                        food={props.food}
+                    />
                 </div>
             </div>
         </div>
