@@ -1,11 +1,12 @@
 import * as React from 'react';
 import Divider from '@mui/joy/Divider';
 import Sheet from '@mui/joy/Sheet';
-import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Button } from "@mui/material";
 import ShortTextIcon from '@mui/icons-material/ShortText';
 import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function ColorInversionFooter(props) {
     const [color] = React.useState('neutral');
@@ -34,13 +35,20 @@ export default function ColorInversionFooter(props) {
 
                 <div id='socials'>
                     <span id='media'>
-                        <FacebookRoundedIcon />
+                        <LinkedInIcon />
                     </span>
+
+                    <span id='media'>
+                        <InstagramIcon />
+                    </span>
+
                     <span id='media'>
                         <GitHubIcon />
                     </span>
 
                 </div>
+
+                <a style={{ textDecoration: 'none', color: 'inherit', fontSize: '.7rem', padding: '10px' }} href="https://www.flaticon.com/free-icons/italy" title="italy icons">Italy icons created by Creatype - Flaticon</a>
             </div>
 
             <Divider sx={{ my: 2 }} />
