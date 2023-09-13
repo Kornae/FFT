@@ -3,8 +3,18 @@ import Section1 from './Section1';
 import Section2 from './Section2';
 import Section3 from './Section3';
 import Section4 from './Section4';
+import Section5 from './Section5';
 
 function App() {
+  const scrollToSection1 = (e) => {
+    e.preventDefault()
+    const section1 = document.getElementById("s1");
+
+    if (section1) {
+      section1.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const scrollToSection2 = (e) => {
     e.preventDefault()
     const section2 = document.getElementById("s2");
@@ -42,6 +52,12 @@ function App() {
         <div id='s2'><Section2 /></div>
         <div id='s3'><Section3 /></div>
         <div id='s4'><Section4 /></div>
+        <div id='s5'><Section5
+          home={scrollToSection1}
+          overview={scrollToSection2}
+          food={scrollToSection3}
+          explore={scrollToSection4}
+        /></div>
       </div>
     </div>
   );

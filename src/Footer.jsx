@@ -1,206 +1,67 @@
 import * as React from 'react';
-
-import AspectRatio from '@mui/joy/AspectRatio';
-import Box from '@mui/joy/Box';
-import IconButton from '@mui/joy/IconButton';
-import Card from '@mui/joy/Card';
-import CardContent from '@mui/joy/CardContent';
-import Chip from '@mui/joy/Chip';
 import Divider from '@mui/joy/Divider';
-import Input from '@mui/joy/Input';
-import List from '@mui/joy/List';
-import ListSubheader from '@mui/joy/ListSubheader';
-import ListItem from '@mui/joy/ListItem';
-import ListItemDecorator from '@mui/joy/ListItemDecorator';
-import ListItemButton from '@mui/joy/ListItemButton';
-import Typography from '@mui/joy/Typography';
 import Sheet from '@mui/joy/Sheet';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import SendIcon from '@mui/icons-material/Send';
-import ColorLensRoundedIcon from '@mui/icons-material/ColorLensRounded';
+import { Button } from "@mui/material";
+import ShortTextIcon from '@mui/icons-material/ShortText';
+import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
 
-export default function ColorInversionFooter() {
-    const [color, setColor] = React.useState('neutral');
+export default function ColorInversionFooter(props) {
+    const [color] = React.useState('neutral');
     return (
         <Sheet
             variant="solid"
             color={color}
             invertedColors
             sx={{
-                ...(color !== 'neutral' && {
-                    bgcolor: `${color}.800`,
+                ...({
+                    bgcolor: `#0a0a0a`,
                 }),
                 flexGrow: 1,
                 p: 2,
-                borderRadius: { xs: 0, sm: 'sm' },
                 height: 'auto',
                 padding: '40px',
-                
+
             }}
         >
-    
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                <IconButton
-                    variant="soft"
-                    size="sm"
-                    onClick={() => {
-                        const colors = ['primary', 'neutral', 'danger', 'success', 'warning'];
 
-                        const nextColor = colors.indexOf(color);
-                        setColor(colors[nextColor + 1] ?? colors[0]);
-                    }}
-                >
-                    <ColorLensRoundedIcon fontSize="small" />
-                </IconButton>
-                <Divider orientation="vertical" />
-                <IconButton variant="plain">
-                    <FacebookRoundedIcon />
-                </IconButton>
-                <IconButton variant="plain">
-                    <GitHubIcon />
-                </IconButton>
-                <Input
-                    variant="soft"
-                    placeholder="Type in your email"
-                    type="email"
-                    name="email"
-                    endDecorator={
-                        <IconButton variant="soft" aria-label="subscribe">
-                            <SendIcon />
-                        </IconButton>
-                    }
-                    sx={{ ml: 'auto', display: { xs: 'none', md: 'flex' } }}
-                />
-            </Box>
+            <div id='first-section'>
+                <div id='footer-quote'>
+                    <p id="f-quote">
+                        “A man has not fully lived until he experiences that gentle balmy climate of ancient empires, the land of lemon trees and the genius of Michelangelo.”   <br />
+                    </p> <p id="f-author">  — E.A. BUCCHIANERI - AMERICAN WRITER </p></div>
+
+                <div id='socials'>
+                    <span id='media'>
+                        <FacebookRoundedIcon />
+                    </span>
+                    <span id='media'>
+                        <GitHubIcon />
+                    </span>
+
+                </div>
+            </div>
+
             <Divider sx={{ my: 2 }} />
-            <Box
-                sx={{
-                    display: 'flex',
-                    flexDirection: { xs: 'column', md: 'row' },
-                    alignItems: { md: 'flex-start' },
-                    justifyContent: 'space-between',
-                    flexWrap: 'wrap',
-                    gap: 2,
-                }}
-            >
-                <Card
-                    variant="soft"
-                    size="sm"
-                    sx={{
-                        flexDirection: { xs: 'row', md: 'column' },
-                        minWidth: { xs: '100%', md: 'auto' },
-                        gap: 1,
-                    }}
-                >
-                    <AspectRatio
-                        ratio="21/9"
-                        minHeight={80}
-                        sx={{ flexBasis: { xs: 200, md: 'initial' } }}
-                    >
-                        <img alt="" src="/static/blog/mui-product-comparison/ecosystem.png" />
-                    </AspectRatio>
-                    <CardContent>
-                        <Typography level="body-sm">Intro to the MUI ecosystem</Typography>
-                        <Typography level="body-xs" sx={{ mb: 0.5 }}>
-                            MUI blog
-                        </Typography>
-                    </CardContent>
-                </Card>
-                <List
-                    size="sm"
-                    orientation="horizontal"
-                    wrap
-                    sx={{ flexGrow: 0, '--ListItem-radius': '8px' }}
-                >
-                    <ListItem nested sx={{ width: { xs: '50%', md: 140 } }}>
-                        <ListSubheader>Sitemap</ListSubheader>
-                        <List>
-                            <ListItem>
-                                <ListItemButton>Services</ListItemButton>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemButton>Blog</ListItemButton>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemButton>Contact us</ListItemButton>
-                            </ListItem>
-                        </List>
-                    </ListItem>
-                    <ListItem nested sx={{ width: { xs: '50%', md: 180 } }}>
-                        <ListSubheader>Product</ListSubheader>
-                        <List sx={{ '--ListItemDecorator-size': '32px' }}>
-                            <ListItem>
-                                <ListItemButton>
-                                    <ListItemDecorator>
-                                        <img
-                                            alt=""
-                                            src="/static/branding/product-core-dark.svg"
-                                            width="24"
-                                        />
-                                    </ListItemDecorator>
-                                    MUI Core
-                                </ListItemButton>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemButton>
-                                    <ListItemDecorator>
-                                        <img
-                                            alt=""
-                                            src="/static/branding/product-advanced-dark.svg"
-                                            width="24"
-                                        />
-                                    </ListItemDecorator>
-                                    MUI X
-                                </ListItemButton>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemButton>
-                                    <ListItemDecorator>
-                                        <img
-                                            alt=""
-                                            src="/static/branding/product-toolpad-dark.svg"
-                                            width="24"
-                                        />
-                                    </ListItemDecorator>
-                                    MUI Toolpad
-                                    <Chip
-                                        variant="soft"
-                                        size="sm"
-                                        sx={{ minHeight: 20, fontSize: 'xs2', ml: 'auto' }}
-                                    >
-                                        BETA
-                                    </Chip>
-                                </ListItemButton>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemButton>
-                                    <ListItemDecorator>
-                                        <img
-                                            alt=""
-                                            src="/static/branding/product-designkits-dark.svg"
-                                            width="24"
-                                        />
-                                    </ListItemDecorator>
-                                    Design kits
-                                </ListItemButton>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemButton>
-                                    <ListItemDecorator>
-                                        <img
-                                            alt=""
-                                            src="/static/branding/product-templates-dark.svg"
-                                            width="24"
-                                        />
-                                    </ListItemDecorator>
-                                    Templates
-                                </ListItemButton>
-                            </ListItem>
-                        </List>
-                    </ListItem>
-                </List>
-            </Box>
+            <div id="nav-foot" className="container">
+                <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                    <div className="container-fluid">
+                        <a style={{ color: '#fefefe' }} className="navbar-brand" href="/"><LocalPizzaIcon /> Italy</a>
+                        <Button color="inherit" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup2" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <ShortTextIcon fontSize="large" />
+                        </Button>
+                        <div className="collapse navbar-collapse" id="navbarNavAltMarkup2">
+                            <div className="navbar-nav ms-auto">
+                                <a style={{ color: '#fefefe' }} className="nav-link" href="/" onClick={props.home}>Home</a>
+                                <a style={{ color: '#fefefe' }} className="nav-link" href="/" onClick={props.overview}>Overview</a>
+                                <a style={{ color: '#fefefe' }} className="nav-link" href="/" onClick={props.food}>Cibo & Vino</a>
+                                <a style={{ color: '#fefefe' }} className="nav-link" href="/" onClick={props.explore}>Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </Sheet>
     );
 }

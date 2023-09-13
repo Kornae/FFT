@@ -16,7 +16,7 @@ export default function Section1(props) {
                         </Button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav mx-auto">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <button className="nav-link">Home</button>
                                 <a className="nav-link" href="/" onClick={props.about}>Overview</a>
                                 <a className="nav-link" href="/" onClick={props.features}>Cibo & Vino</a>
                                 <a className="nav-link" href="/" onClick={props.contact}>Explore</a>
