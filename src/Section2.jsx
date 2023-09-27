@@ -15,7 +15,7 @@ let handleClick = () => {
                     “A man has not fully lived until he experiences that gentle balmy climate of ancient empires, the land of lemon trees and the genius of Michelangelo.”   <br />
                     </p> <p id="p-author">  — E.A. BUCCHIANERI - AMERICAN WRITER </p></div>
                 <div id="content-image">
-                    <img alt="building" id="buildimg-img" src="https://images.unsplash.com/photo-1514232337902-5e8308b91059?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2952&q=80"/>
+                    <img alt="building" id="buildimg-img" src="https://images.unsplash.com/photo-1534250617995-d16425086b91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fGl0YWx5fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"/>
                 </div>
                 <div id="content-text">
                     <h6 id="content-h6">Italy</h6>
