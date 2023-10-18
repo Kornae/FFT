@@ -10,8 +10,8 @@ body {
   display: grid;
   grid-template-areas: 's1 s1 s1 s1'
     's2 s2 s2 s2'
-    's4 s4 s4 s4'
     's3 s3 s3 s3'
+    's4 s4 s4 s4'
     's5 s5 s5 s5';
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
@@ -407,6 +407,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: 'fs fs fs fs';
   grid-template-rows: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 }
 
 #s5-footer {
@@ -420,7 +421,6 @@ body {
 
 #footer {
   grid-area: footer;
-
 }
 
 

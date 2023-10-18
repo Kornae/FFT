@@ -16,7 +16,8 @@ export default function ColorInversionFooter(props) {
             invertedColors
             sx={{
                 ...({
-                    bgcolor: `#0a0a0a`,
+                    bgcolor: `#ffffff`,
+                    color:'#0a0a0a'
                 }),
                 flexGrow: 1,
                 p: 2,
